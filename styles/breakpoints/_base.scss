@@ -114,7 +114,12 @@ main {
 
   & .logo {
     font-size: 42px;
+    display: flex;
     justify-content: center;
+
+    &__img {
+      width: 1em;
+    }
   }
 
   &__inner {
@@ -125,7 +130,7 @@ main {
   }
 }
 
-.travel {
+.dream {
   @extend .content-width;
   @extend .mb-lg;
 
@@ -181,14 +186,14 @@ main {
     @extend .pb-sm;
 
     &.inview {
-      & .travel__title::before {
+      & .dream__title::before {
         transform: translateY(-50%);
       }
     }
   }
 }
 
-.houses {
+.Favorite {
   @extend .content-width;
   @extend .mb-lg;
 
@@ -260,9 +265,8 @@ main {
 
 .logo {
   font-size: 38px;
-  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  align-items: center;
 
   &__img {
     width: 1em;
@@ -298,7 +302,13 @@ main {
 
   & .logo {
     font-size: 38px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    &__img {
+      width: 1em;
+    }
   }
 }
 
