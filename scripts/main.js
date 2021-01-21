@@ -1,5 +1,5 @@
 import '../styles/loader.css';
-import Pace from './vendors/pace.js';
+import './vendors/pace.js';
 import '../styles/vendors/bootstrap-reboot.css';
 import '../styles/vendors/swiper.min.css';
 import '../styles/style.css';
@@ -13,7 +13,7 @@ import HeroSlider from './libs/hero-slider.js';
 import MobileMenu from './libs/mobile-menu.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-    new Main();
+    const main = new Main();
 });
 
 class Main {
