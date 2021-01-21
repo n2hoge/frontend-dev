@@ -1,3 +1,17 @@
+import '../styles/loader.css';
+import './vendors/pace.js';
+import '../styles/vendors/bootstrap-reboot.css';
+import '../styles/vendors/swiper.min.css';
+import '../styles/style.css';
+import './vendors/swiper.min.js';
+import  './vendors/TweenMax.min.js';
+import './vendors/scroll-polyfill.js';
+import ScrollObserver from './libs/scroll.js';
+import './libs/top-scroll.js';
+import TweenTextAnimation from './libs/text-animation.js';
+import HeroSlider from './libs/hero-slider.js';
+import MobileMenu from './libs/mobile-menu.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     const main = new Main();
 });
@@ -81,9 +95,8 @@ class Main {
         this.observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), {once: false});
         this.observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
         this.observers = new ScrollObserver('.appear', this._inviewAnimation);
-        this.observers = new ScrollObserver('.tween-animate-title', this._textAnimation, {rootMargin: "-200px 0px"});
+        this.observers = new ScrollObserver('.tween-animate-title', this._textAnimation, {rootMargin: '-200px 0px'});
         this.observers = new ScrollObserver('.swiper-container', this._toggleSlideAnimation.bind(this), {once: false});
-        this.observers = new ScrollObserver('#main-content', this._sideAnimation.bind(this), {once: false, rootMargin: "-300px 0px"});
+        this.observers = new ScrollObserver('#main-content', this._sideAnimation.bind(this), {once: false, rootMargin: '-300px 0px'});
     }
 }
-

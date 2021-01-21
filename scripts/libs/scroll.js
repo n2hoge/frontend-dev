@@ -1,9 +1,9 @@
-class ScrollObserver {
+export default class ScrollObserver {
     constructor(els, cb, options) {
         this.els = document.querySelectorAll(els);
         const defaultOptions = {
             root: null,
-            rootMargin: "0px",
+            rootMargin: '0px',
             threshold: 0,
             once: true
         };
@@ -30,7 +30,7 @@ class ScrollObserver {
 
         // @see https://github.com/w3c/IntersectionObserver/tree/master/polyfill
         this.io.POLL_INTERVAL = 100;
-        
+
         this.els.forEach(el => this.io.observe(el));
     }
 

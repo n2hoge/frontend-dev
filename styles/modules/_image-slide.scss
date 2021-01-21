@@ -1,7 +1,7 @@
 .cover-slide {
   position: relative;
   overflow: hidden;
-  
+
   &::after {
     content: "";
     position: absolute;
@@ -106,7 +106,7 @@
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
+  background-image: url(/images/hero-bicycle1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,10 +116,10 @@
 
 .img-bg50 {
   position: relative;
-  
+
   &::before {
     display: block;
-    content: '';
+    content: "";
     padding-top: 50%;
   }
 }

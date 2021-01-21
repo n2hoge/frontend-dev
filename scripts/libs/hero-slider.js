@@ -1,4 +1,4 @@
-class HeroSlider {
+export default class HeroSlider {
     constructor(el) {
         this.el = el;
         this.swiper = this._initSwiper();
@@ -27,7 +27,7 @@ class HeroSlider {
             delay: 4000,
             disableOnInteraction: false
         }, options);
-        
+
         this.swiper.params.autoplay = options;
         this.swiper.autoplay.start();
     }
